@@ -1,0 +1,1 @@
+java -Xms4G -Xmx4G -Dcom.mojang.eula.agree=true -jar /root/mcserver/server.jar --nogui
