@@ -1,9 +1,6 @@
-FROM ubuntu:20.04
+FROM adoptopenjdk/openjdk11:jre
 
-RUN apt-get update && apt-get install -y \
-nano \
-openjdk-11-jdk \
-wget
+RUN apt-get update && apt-get install -y wget
 
 WORKDIR /root/mcserver
 
