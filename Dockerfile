@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:jre
+FROM adoptopenjdk/openjdk16:jre
 
 RUN apt-get update && apt-get install -y openssh-server sudo
 
@@ -12,7 +12,7 @@ EXPOSE 22
 
 WORKDIR /home/admin/mcserver
 
-ADD https://papermc.io/api/v1/paper/1.16.5/latest/download server.jar
+ADD https://papermc.io/api/v1/paper/1.17/latest/download server.jar
 
 COPY files .
 
