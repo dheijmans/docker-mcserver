@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk:17
+FROM azul/zulu-openjdk-debian:17
 
 RUN apt-get update && apt-get install -y openssh-server sudo
 
