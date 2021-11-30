@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk-debian:17
+FROM arm64v8/openjdk:17-oracle
 
 RUN apt-get update && apt-get install -y openssh-server sudo
 
