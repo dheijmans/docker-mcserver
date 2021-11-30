@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:jre
+FROM adoptopenjdk/openjdk16:jre
 
 RUN apt-get update && apt-get install -y openssh-server sudo
 
@@ -12,7 +12,7 @@ EXPOSE 22
 
 WORKDIR /home/admin/mcserver
 
-ADD https://launcher.mojang.com/v1/objects/3cf24a8694aca6267883b17d934efacc5e44440d/server.jar server.jar
+ADD https://papermc.io/api/v1/paper/1.18/latest/download server.jar
 
 COPY files .
 
