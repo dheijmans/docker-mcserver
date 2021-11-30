@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk16:jre
+FROM adoptopenjdk/openjdk17:jre
 
 RUN apt-get update && apt-get install -y openssh-server sudo
 
